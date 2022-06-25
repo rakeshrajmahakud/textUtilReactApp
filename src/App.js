@@ -1,16 +1,16 @@
 import { useState } from "react";
 import "./App.css";
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from './components/TextForm';
 import Alert from './components/Alert'
 
 // thi is react router part start
-import {
-  // BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+// import {
+//   // BrowserRouter,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
 // --------------------------end 
 
 function App() {
@@ -55,11 +55,11 @@ function App() {
       <Navbar title="Rakeshraj" mode = {mode} toggleMode = {toggleMode}></Navbar>
       <Alert alert= {alert}  /> 
       <div className="container my-3">
-      {/* <TextForm heading="Enter text to analyze" mode = {mode}></TextForm> */}
-      <Routes>
-        <Route path="about" element={<About />} />        
-        <Route path="/" element={ <TextForm heading="Enter text to analyze" mode = {mode}></TextForm>} />        
-      </Routes>
+      <TextForm heading="Enter text to analyze" mode = {mode}></TextForm>
+      {/* <Routes> */}
+        {/* <Route path="about" element={<About />} />         */}
+        {/* <Route path="/" element={ <TextForm heading="Enter text to analyze" mode = {mode}></TextForm>} />         */}
+      {/* </Routes> */}
 
        
         {/* <About /> */}
